@@ -14,4 +14,10 @@ match ($act) {
 //bảng điều khiển
 '/' => (new DashboardController())->index(),
 'danhmuc/list' => (new DanhmucController)->index(),
+'danh-mucs'          => (new DanhMucController ())->index(),
+'form-them-danh-muc' => (new DanhMucController())->create(),
+'them-danh-muc'      => (new DanhMucController())->store(),
+'form-sua-danh-muc'  => (new DanhMucController())->edit(),
+'sua-danh-muc'       => (new DanhMucController())->update(),
+'xoa-danh-muc'       => (new DanhMucController())->destroy(),
 };
